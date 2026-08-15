@@ -1,0 +1,19 @@
+{
+  "name": "read-it-later",
+  "version": "1.0.0",
+  "description": "自建「稍后阅读」链接收集工具：手机分享保存链接，电脑打开阅读",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "engines": {
+    "node": ">=18.17"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.10.0",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2"
+  }
+}

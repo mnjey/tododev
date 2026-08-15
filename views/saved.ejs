@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>已保存 · 稍后阅读</title>
+  <meta name="theme-color" content="#4f46e5">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="icon" href="/icons/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body class="center-page">
+  <div class="card saved-card">
+    <div class="saved-icon" aria-hidden="true">✓</div>
+    <h1 class="saved-h">已保存</h1>
+    <p class="saved-title"><%= bookmark.title %></p>
+    <p class="saved-url"><%= bookmark.host %></p>
+    <div class="saved-actions">
+      <a class="btn btn-primary" href="/">查看列表</a>
+      <a class="btn btn-ghost" href="<%= bookmark.url %>" target="_blank" rel="noopener noreferrer">立即阅读</a>
+    </div>
+  </div>
+</body>
+</html>
